@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>FlexBox Error</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+    <style>
+      body{
+        background-color: lightgoldenrodyellow;
+        font-family: 'Merriweather', serif;
+      }
+
+      .error_wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+
+      .error_wrapper>.error_heading{
+        margin-bottom: 42px;
+      }
+
+      img{
+        width: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="error_wrapper">
+      <div class="error_heading">
+        <h2>Yikes! Looks like this page is unavailable at the moment. Try again later!</h2>
+      </div>
+      <img src="../assets/tbot.png" alt="Disconnect error">
+    </div>
+  </body>
+</html>

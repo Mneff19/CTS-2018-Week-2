@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF=8'>
+    <title>MyNavbar</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+            crossorigin="anonymous"></script>
+
+    <style>
+      body{
+        font-family: 'Cinzel', serif;
+        margin: 0;
+      }
+
+      .navbar_wrapper{
+        height: 50px;
+        width: 100vw;
+        display: flex;
+        background-color:#66ccaa;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .navbar_wrapper a{
+        height: 100%;
+        border-bottom: 3px solid #667f77;
+        margin: 0px 0px 3px 0px;
+        text-align: center;
+        padding: 0px 8px 0px 8px;
+        line-height: 50px;
+        text-decoration: none;
+        color: black;
+        text-shadow: 1px 0px #667f77;
+      }
+
+      a:hover{
+        background-color: #899699;
+        cursor: pointer;
+        color: #7fffd4;
+      }
+
+      .navbar_logo{
+        padding: 0px 50px 0px 50px;
+        border-bottom: 3px solid #899699;
+        flex-basis:250px;
+      }
+
+      .navbar_logo:hover{
+        background-color: #667f77;
+        cursor: pointer;
+        color: #70E0BB;
+      }
+
+      .navbar_btn{
+        background-color: #70E0BB;
+        border-bottom: 3px solid #667f77;
+        flex-basis: 200px;
+        display:none;
+        text-align: center;
+      }
+
+      .navbar_btn3{
+        float: right;
+      }
+
+      @media (min-width: 48em){
+        .navbar_wrapper{
+          display: flex;
+        }
+
+        .navbar_btn {
+          display: flex;
+          text-align: center;
+        }
+
+        .toggle{
+          display: none;
+        }
+      }
+
+      @media (max-width: 48em){
+        .navbar .toggle{
+
+        }
+      }
+
+
+    </style>
+  <head>
+
+  <body>
+    <div class='navbar_wrapper'>
+        <a href="#" class='toggle' id="navBars"><i class="fas fa-bars"></i></a>
+        <a href='navbar.html' class='navbar_logo'>Matthew Neff</a>
+        <a href='navbar.html' class='navbar_btn1 navbar_btn'>Profile</a>
+        <a href='navbar.html' class='navbar_btn2 navbar_btn'>Projects</a>
+        <a href='navbar.html' class='navbar_btn3 navbar_btn'>Contact</a>
+    </div>
+  </body>
+
+  <script>
+      const navBars = document.querySelector('#navBars');
+      navBars.addEventListener('click', (e) => {
+          navBars.parentElement.classList.toggle('active');
+      })
+  </script>
+</html>

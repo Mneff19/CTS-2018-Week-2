@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body {
+          font-family: 'Lato', sans-serif;
+        }
+
+        .container {
+          display: flex;
+        }
+
+        .container .item {
+          display: flex;
+          flex: 1;
+          border: 1px solid grey;
+          border-radius: 5px;
+          justify-content: space-between;
+          margin: 10px;
+          
+        }
+
+        .container .item .content {
+          display: flex;
+        }
+
+        .container .item .content .metadata {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin-left: 20px;
+        }
+
+        .container .item .content .metadata .title {
+          margin: 0px;
+        }
+
+        .container .item .btn-group {
+          display: flex;
+          align-items: center;
+          align-items: flex-end;
+        }
+
+        .container .item .btn-group .button {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          width: 42px;
+          justify-content: center;
+          font-size: 2em;
+        }
+
+        .container .item .btn-group .button a {
+          color: lightseagreen;
+          text-decoration: none;
+        }
+
+        .container .item .btn-group .button:hover {
+          background-color: lightslategrey;
+          cursor: pointer;
+        }
+
+        .container .item .btn-group .button:hover a {
+          color:white;
+        }
+
+        .item.featured {
+          flex: auto;
+        }
+
+        .item.associated {
+          flex: initial;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class='container'>
+        <div class='item featured'>
+            <div class='content'>
+                <img src='data:image/png;base64,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' width='200px'
+                    height='120px'>
+                <div class='metadata'>
+                    <h1 class='title'>My amazing title</h1>
+                    <h3>And a subtitle</h3>
+                </div>
+            </div>
+            <div class='btn-group'>
+                <div class='button'>
+                    <a href="#">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                </div>
+                <div class='button'>
+                    <a href="#">
+                        <i class="fas fa-times-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class='item associated'>
+            <div class='content'>
+                <img src='https://d32xj74kbqkoqn.cloudfront.net/uploads/guide/video_image/43/foundations-video-thumb.jpg' width='200px' height='120px'>
+                <div class='metadata'>
+                    <h1 class='title'>Another amazing post</h1>
+                </div>
+            </div>
+            <div class='btn-group'>
+                <div class='button'>
+                    <a href="#">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                </div>
+                <div class='button'>
+                    <a href="#">
+                        <i class="fas fa-times-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
