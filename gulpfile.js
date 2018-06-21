@@ -5,7 +5,7 @@ gulp.task('browser-sync', function(){
     server: {
       baseDir: "./"
     },
-    index: 'promises.js'
+    index: 'lodash.html'
   });
 });
 
