@@ -3,9 +3,9 @@ var bs = require('browser-sync').create();
 gulp.task('browser-sync', function(){
   bs.init({
     server: {
-      baseDir: "./"
+      baseDir: "./test2/src"
     },
-    index: 'lodash.html'
+    index: 'modules.html'
   });
 });
 
