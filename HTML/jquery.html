@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      .hideElement {
+        visibility: hidden;
+      }
+
+      .showElement {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='mainHeading hideElement'>
+      <h1>Hello 'friend'</h1>
+    </div>
+
+    <div class='subHeading showElement'>
+      My mediocre subheading...
+    </div>
+
+    <button onclick="toggleContent()" id="toggleBtn">Toggle Content</button>
+  </body>
+
+  <script type='text/javascript' src='JS/jquery.js'></script>
+</html>
