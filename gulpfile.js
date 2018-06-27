@@ -5,7 +5,7 @@ gulp.task('browser-sync', function(){
     server: {
       baseDir: "./"
     },
-    index: 'listeners.html'
+    index: 'searchEngine.html'
   });
 });
 

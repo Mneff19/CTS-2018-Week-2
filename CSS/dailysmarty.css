@@ -1,0 +1,144 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #ffffff;
+}
+
+p,
+li {
+  font-family: 'PT Serif', serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper {
+  width: 660px;
+}
+
+.style-details{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  grid-gap: 20px;
+}
+
+.style-details-text{
+    text-align: right;
+}
+
+.style-details-text div{
+    color: #808080;
+    font-weight: normal;
+}
+
+.style-details-text h3{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.style-details-logo img {
+  width: 100%;
+}
+
+.dos_donts_wrapper {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-gap: 30px;
+}
+
+.dont_image_box img {
+  width: 50%;
+}
+
+.dont_image_box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dos_donts_heading {
+  font-weight: 900;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.blue_text {
+  color: #0079ff;
+}
+
+.red_text {
+  color: #dc0004;
+}
+
+.dos_donts_list li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.dont_image_box div {
+    font-size: 14px;
+    color: #999999;
+}
+
+.alternate_options_wrapper {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.alternate_options_wrapper h3 {
+    color: #999999;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.alternate_options_wrapper li {
+    font-size: 19px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.alternate_options_images {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 100px 40px;
+}
+
+.image_logos {
+    width: 60%;
+}
+
+.text_logos {
+    width: 90%;
+}
+
+.additional_branding_details a {
+    text-decoration: none;
+    color: #4fb8e8;
+    font-size: 19px;
+}
+
+.additional_branding_details a:hover {
+    text-decoration: underline;
+}
+
+.additional_branding_details p {
+    margin-bottom: 42px;
+}
+
+@media (max-width: 48em) {
+  .style-details, .dos_donts_wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  .style-details-text {
+    text-align: center;
+  }
+}

@@ -12,3 +12,8 @@ sendMessage = () => {
     }
     widget.insertBefore(newDiv, chatWrapper);
   }
+
+  clearMessages = () => {
+    const messages = document.querySelectorAll('.chatMsg')
+    messages.forEach(message => message.remove())
+  }
