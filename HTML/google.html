@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>"Google"</title>
+    <link rel="stylesheet" href="google.css">
+  </head>
+  <body>
+    <div class='container'>
+      <div class="header">
+          <div class="left-btn-group btn-group">
+            <a href="#">About</a>
+            <a href="#">Store</a>
+          </div>
+
+          <div class="right-btn-group btn-group">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <button type='button' class='signIn'>Sign In</button>
+          </div>
+      </div>
+
+      <div class="middle">
+        <div class="logo-wrapper">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="">
+        </div>
+
+        <div class="search-bar">
+          <input type="text" id='search-box'>
+        </div>
+
+        <div class='middle-btn-group'>
+          <button type="button" name="search">Google Search</button>
+          <button type="button" name="feelingLucky">I'm Feeling Lucky</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="left-btn-group btn-group">
+          <a href="#">Advertising</a>
+        </div>
+
+        <div class="right-btn-group btn-group">
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        function focusIt()
+        {
+          const my_search_box = document.getElementById('search-box');
+          my_search_box.focus();
+        }
+        onload = focusIt();
+     </script>
+  </body>
+</html>

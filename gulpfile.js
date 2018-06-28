@@ -5,7 +5,7 @@ gulp.task('browser-sync', function(){
     server: {
       baseDir: "./"
     },
-    index: 'searchEngine.html'
+    index: 'pintrest.html'
   });
 });
 
