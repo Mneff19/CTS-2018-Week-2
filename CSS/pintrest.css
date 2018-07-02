@@ -1,0 +1,156 @@
+html{
+  font-family: 'Font Awesome\ 5 Free', Arial, serif;
+}
+
+/* *::before,
+*::after{
+  margin-left: 0px;
+  padding-left: 0px;
+} */
+
+.container{
+  display: grid;
+  grid-template-rows: repeat(minmax(1fr));
+  grid-gap: 50px;
+  width: 100vw;
+}
+
+.header{
+  /* grid-row: 1; */
+  display: flex;
+  width: 100vw;
+  padding-bottom: 5px;
+  border-bottom: 2px solid lightgrey;
+  margin-left: 0px;
+  grid-row: 1;
+  height: 60px;
+}
+
+.logo{
+  display: flex;
+  flex-basis: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img{
+  height:50px;
+  padding-right: 7px;
+}
+
+.search-bar{
+  display: flex;
+  align-items: center;
+  flex-basis: 1000px;
+  flex-grow: 2;
+}
+
+.search-bar input{
+  width: 100%;
+  border-radius: 10px;
+  height: 40px;
+  background-color: lightgrey;
+  border: 0px solid transparent;
+}
+
+.search-bar input[type='text']::placeholder{
+  color: grey;
+}
+
+.search-bar input[type='text']{
+  color: slategrey;
+  padding-left: 15px;
+}
+
+.search-bar input:focus{
+  outline: none;
+}
+
+.btn-group-right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+
+.btn-group-right div, .btn-group-right i{
+  padding-left: 40px;
+  padding-right: 40px;
+  color: slategrey;
+}
+
+.btn-group-right div:hover, .btn-group-right i:hover{
+  cursor: pointer;
+}
+
+@media (max-width :40em) {
+  .btn-group-right div, .btn-group-right i{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+})
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+    width: 90%;
+    max-width: 1100px;
+    min-width: 800px;
+    margin: 50px auto;
+}
+
+.columns {
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    -webkit-column-fill: auto;
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -moz-column-fill: auto;
+    column-count: 3;
+    column-gap: 10px;
+    column-fill: auto;
+}
+
+.pin {
+    display: inline-block;
+    background: #FEFEFE;
+    border: 2px solid #FAFAFA;
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    margin: 0px 2px 15px 0px;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    padding: 15px 15px 5px 15px;
+    background: -webkit-linear-gradient(45deg #FFF, #F9F9F9);
+    opacity: 1;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+  }
+
+  .pin img {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+.pin p {
+    font: 12px/18px Arial, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+.pin:hover {
+    border-radius: 20px;
+    cursor: pointer;
+}
